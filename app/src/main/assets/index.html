@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Tap Reflex Challenge</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="canvas-container">
+        <canvas id="game-canvas"></canvas>
+        <canvas id="fx-canvas"></canvas>
+    </div>
+
+    <div id="hud">
+        <div class="hud-group">
+            <div id="h-score">0</div>
+            <div id="h-speed">SPEED: 1.0x</div>
+        </div>
+        <div class="hud-group" style="text-align: right;">
+            <div id="h-lives">❤️❤️❤️</div>
+            <div id="h-combo">×0</div>
+        </div>
+    </div>
+
+    <!-- Menu Screen -->
+    <div id="menu" class="screen">
+        <h1>TAP REFLEX</h1>
+        <p>A high-speed reaction challenge.</p>
+        <button id="btn-start" class="btn">START GAME</button>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="gameover" class="screen" style="display: none;">
+        <h2>GAME OVER</h2>
+        <div id="go-score">0</div>
+        <div id="go-best">BEST: 0</div>
+        <div id="new-best">🏆 NEW BEST!</div>
+        <div style="margin-top: 30px;">
+            <button id="btn-restart" class="btn">PLAY AGAIN</button>
+            <button id="btn-menu" class="btn secondary-btn">MENU</button>
+        </div>
+    </div>
+
+    <!-- Pause Screen -->
+    <div id="pause" class="screen" style="display: none;">
+        <h2>PAUSED</h2>
+        <button id="btn-resume" class="btn">RESUME</button>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
